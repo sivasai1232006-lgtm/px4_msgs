@@ -4,7 +4,8 @@
 #
 # rtcm_corrections - external fixed-base corrections fed into the vehicle (MAVLink
 # GPS_RTCM_DATA, UAVCAN RTCMStream, GPS drivers in dump mode). Multiple
-# sources are allowed, one uORB instance each; consumers select one instance.
+# sources are allowed, one uORB instance each; consumers select an instance
+# via their stale-link logic.
 #
 # rtcm_moving_baseline - moving-base GPS output (RTCM 4072 or equivalent) intended for a rover.
 # Single publisher per vehicle (on-board moving base, or a CANnode
